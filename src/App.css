@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
+.imgApp {
+  /* background-image: url(./images/logo--300x95.png); */
+  background-size: 100%;
+  background-position: 100%;
+  /* size: 100%; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  box-sizing: border-box;
+  /* position: relative; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul li {
+  text-shadow: 25px #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bgBlack {
+  background-color: black;
+}
+
+.img2 {
+  background-image: url(./images/baskethunt2.png);
+  background-repeat: no-repeat;
+}
+
+.progress-bar-container{
+  margin-top: 15px;
+  height: 20px;
+  width: inherit;
+  border: 1px solid gray;
+  border-radius: 20px;
+  position: relative;
+  padding: 10px;
+}
+
+#progress-bar-quarterly{
+  --dynamic-width : 90%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--dynamic-width);
+  min-width: 0rem;
+  max-width: calc(100% - 20px);
+  background-color: #ff7a3d;
+  border-radius: 20px;
+  padding: 10px;
+  animation: alternate;
+  animation-duration: 4s;
 }
 
-.App-link {
-  color: #61dafb;
+#progress-bar-monthly{
+  --dynamic-width : 50%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--dynamic-width);
+  min-width: 0rem;
+  max-width: calc(100% - 20px);
+  background-color: #ff7a3d;
+  border-radius: 20px;
+  padding: 10px;
+  animation: alternate;
+  animation-duration: 4s;
 }
 
-@keyframes App-logo-spin {
+#progress-bar-daily{
+  --dynamic-width : 20%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--dynamic-width);
+  min-width: 0rem;
+  max-width: calc(100% - 20px);
+  background-color: #ff7a3d;
+  border-radius: 20px;
+  padding: 10px;
+  animation: alternate;
+  animation-duration: 4s;
+}
+
+@keyframes alternate {
   from {
-    transform: rotate(0deg);
+    background-color: white;
   }
-  to {
-    transform: rotate(360deg);
-  }
+   to {
+    background-color: #ff7a3d;
+   }
+}
+
+.progress-bar-container {
+  animation: load-content 1s ease-in-out;
+}
+
+
+.loadContent :nth-child(1) {
+  animation: load-content 1s ease-in-out;
+}
+
+.loadContent :nth-child(2) {
+  color: #ff7a3d;
+  animation: load-content 1s 0.2s ease-in-out;
+}
+
+.loadContent :nth-child(3) {
+  animation: load-content 1s 0.4s ease-in-out;
+}
+
+.loadContent :nth-child(4) {
+  animation: load-content 1s 0.6s ease-in-out;
+}
+
+.loadContent :nth-child(5) {
+  animation: load-content 1s 0.8s ease-in-out;
+}
+
+.bg-black {
+  height: 100%;
+}
+
+nav {
+  padding: 15px 20px;
+}
+
+nav a {
+  margin: 15px 5px;
+  text-decoration: none;
+}
+
+
+.body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
 }
