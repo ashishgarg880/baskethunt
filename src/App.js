@@ -4,11 +4,13 @@ import LogoImg from './component/LogoImg';
 import { navBar } from './component/NavBar2';
 import Navbar from './component/Navbar';
 import Index from './component/Index/Index';
+import LoginPage from './component/SecondAssignment/LoginPage';
 function App() {
   return (
     <div className=" w-100 h-100">
+      <LoginPage />
       {/* <Apps /> */}
-      <div className='container text-align-center d-flex justify-context-center align-items-center w-100 h-100 bg-black'>
+      {/* <div className='container text-align-center d-flex justify-context-center align-items-center w-100 h-100 bg-black'>
         <LogoImg />
         <Navbar />
       </div>
@@ -20,7 +22,7 @@ function App() {
           )
           )}
         </Routes>
-      </div>
+      </div> */}
     </div>
   );
 }

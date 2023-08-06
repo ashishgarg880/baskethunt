@@ -5,6 +5,49 @@
   /* size: 100%; */
 }
 
+* {
+  font-family: 'Nunito Sans';
+}
+
+.textStyle {
+  padding: 5px;
+}
+
+.textStyle>div {
+  width: 100%;
+  margin: 10px;
+}
+
+.textStyle>div>input,
+textarea {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.textStyle>div>textarea {
+  height: 150px;
+}
+
+.textStyle>div>button {
+  border: 1px solid #ff7a3d;
+  background-color: #ff7a3d;
+  border-radius: 25px;
+  padding: 5px 30px;
+  color: thistle;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 64px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 40px;
+}
+
 body {
   box-sizing: border-box;
   /* position: relative; */
@@ -18,12 +61,32 @@ ul li {
   background-color: black;
 }
 
+.navbar {
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar>ul {
+  list-style-type: none;
+}
+
+.navbar>ul>li {
+  border: 1px solid #ff7a3d;
+  border-radius: 55px;
+  padding:5px 15px;
+  background-color: #ff7a3d;
+  color: #fff;
+  margin:5px 10px;
+  font-style: none;
+  text-decoration: none;
+}
+
 .img2 {
   background-image: url(./images/baskethunt2.png);
   background-repeat: no-repeat;
 }
 
-.progress-bar-container{
+.progress-bar-container {
   margin-top: 15px;
   height: 20px;
   width: inherit;
@@ -33,8 +96,8 @@ ul li {
   padding: 10px;
 }
 
-#progress-bar-quarterly{
-  --dynamic-width : 90%;
+#progress-bar-quarterly {
+  --dynamic-width: 90%;
   display: flex;
   align-items: center;
   position: absolute;
@@ -50,8 +113,8 @@ ul li {
   animation-duration: 4s;
 }
 
-#progress-bar-monthly{
-  --dynamic-width : 50%;
+#progress-bar-monthly {
+  --dynamic-width: 50%;
   display: flex;
   align-items: center;
   position: absolute;
@@ -67,8 +130,8 @@ ul li {
   animation-duration: 4s;
 }
 
-#progress-bar-daily{
-  --dynamic-width : 20%;
+#progress-bar-daily {
+  --dynamic-width: 20%;
   display: flex;
   align-items: center;
   position: absolute;
@@ -88,9 +151,10 @@ ul li {
   from {
     background-color: white;
   }
-   to {
+
+  to {
     background-color: #ff7a3d;
-   }
+  }
 }
 
 .progress-bar-container {
